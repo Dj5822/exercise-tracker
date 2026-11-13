@@ -3,26 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { AppContextProvider } from './context/AppContextProvider';
+import { RecordsProvider } from './context/RecordsContextProvider';
 import { BrowserRouter } from 'react-router-dom';
-import { Auth0Provider } from '@auth0/auth0-react';
-import config from './auth_config.json';
-import { createBrowserHistory } from "history";
-
-const onRedirectCallback = (appState: any) => {
-  const history = createBrowserHistory();
-  history.push(
-    appState && appState.returnTo ? appState.returnTo : window.location.pathname
-  );
-};
-
-const providerConfig = {
-  domain: config.domain,
-  clientId: config.clientId,
-  redirectUri: window.location.origin,
-  scope: "read:current_user update:current_user_metadata",
-  onRedirectCallback,
-};
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -30,13 +12,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Auth0Provider {...providerConfig}>
-      <AppContextProvider>      
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </AppContextProvider>
-    </Auth0Provider>
+    <RecordsProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </RecordsProvider>
   </React.StrictMode>
 );
 

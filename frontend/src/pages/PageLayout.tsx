@@ -1,7 +1,6 @@
 import { useContext, useState } from 'react';
-import { useNavigate, NavLink as RouterNavLink  } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Avatar, Box, Button, Divider, IconButton, List, Toolbar, Typography } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+import { Box, Chip, Divider, IconButton, List, Toolbar, Typography } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -14,7 +13,6 @@ import AppBar from '../components/AppBar';
 import Drawer from '../components/Drawer';
 import { Outlet } from "react-router-dom";
 import ColorModeContext from '../context/ColorModeContext';
-import { useAuth0 } from '@auth0/auth0-react';
 
 export default function PageLayout() {
     const colorMode = useContext(ColorModeContext);
@@ -24,18 +22,6 @@ export default function PageLayout() {
     const toggleDrawer = () => {
         setOpen(!open);    
     };
-
-    const {
-        user,
-        isAuthenticated,
-        loginWithRedirect,
-        logout,
-    } = useAuth0();
-
-    const logoutWithRedirect = () =>
-    logout({
-    returnTo: window.location.origin,
-    });
 
     return (
         <Box sx={{ display: 'flex' }}>
@@ -66,21 +52,7 @@ export default function PageLayout() {
                 >
                     Exercise Tracker
                 </Typography>
-                {!isAuthenticated &&
-                <Button variant="contained" onClick={() => loginWithRedirect()}>Log in</Button>}
-                {isAuthenticated && (
-                    <div style={{ display: "flex", flexDirection: "row"}}>
-                        <Button style={{ display: "flex", flexDirection: "row", gap: "16px"}}>
-                            <Avatar alt="Profile" src={user!.picture} />
-                            Profile
-                        </Button>
-                        <Button variant='contained' onClick={() => logoutWithRedirect()} 
-                        color="error" sx={{marginLeft: "24px"}}>
-                            Log out
-                        </Button>
-                    </div>
-                    
-                )}
+                <Chip label="Read only" size="small" color="default" />
                 </Toolbar>
             </AppBar>
 

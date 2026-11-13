@@ -2,12 +2,9 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
   "dependencies": {
-    "@auth0/auth0-react": "^1.10.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.5",
     "@testing-library/jest-dom": "^5.16.4",
@@ -17,7 +14,7 @@
     "@types/node": "^16.11.41",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "axios": "^0.27.2",
+    "js-yaml": "^4.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -27,7 +24,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prestart": "node scripts/sync-records.js",
     "start": "react-scripts start",
+    "prebuild": "node scripts/sync-records.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
     "eslint": "^8.18.0",
     "eslint-plugin-react": "^7.30.0"
   }

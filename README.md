@@ -1,16 +1,11 @@
 # Exercise Tracker
 
 ## Introduction
-Do you feel depressed while looking at your empty Github activity log?
-No worries! Now you can feel even more depressed by looking at your empty exercise log.
-It's easy to use. All you have to do is select either 'Push ups' or 'Pull ups', and then
-type in the quantity of the exercise you have done. After pressing 'Add', then you're good to go.
+Track your exercise records in `records.yaml` and view them in the web frontend.
+The frontend is read-only: it displays your all-time totals, personal bests, charts,
+and the full daily log. To add or change a record, edit `records.yaml`.
 
-![recordExercise](https://user-images.githubusercontent.com/24401134/176348739-2ad01569-07b3-4a9c-94e5-efabfd302841.png)
-
-Once you have enough data, track your progress (or your decline), by going to the 'data' page.
-
-![Graph](https://user-images.githubusercontent.com/24401134/176359839-5a10034f-1149-4fe0-bb97-bbb2772c9565.png)
+Once you have enough data, track your progress (or your decline) on the 'Data' page.
 
 Great! Unfortunately, there aren't many features at the moment, but as soon as I can muster up the energy,
 I'll start to implement some of the more interesting features. For example, I am going to add a radar chart
@@ -19,11 +14,12 @@ weak or strong you are compared to most the people that are at your age. And of 
 'modern day' application without those funky animations and transitions so I'll add that too.
 
 ## How to use
-From the root directory...
-Go to the backend folder and run:
+From the root directory, go to the frontend folder and run:
 `npm install`
 `npm start`
-Go to the frontend folder and run:
-`npm install`
-`npm start`
-Note that you need to have NPM installed to do this. 
+
+`npm start` (and `npm run build`) automatically copies `records.yaml` from the repository
+root into `frontend/public/` so the browser can load it. Restart the dev server after
+editing `records.yaml` so the updated file is copied. Note that you need to have NPM
+installed to do this.
+
