@@ -1,0 +1,1817 @@
+total_records:
+  pull_ups: 92
+  muscle_ups: 2
+  push_ups: 325
+  handstand_push_ups: 33
+  one_arm_push_ups: 20
+  leg_raises: 15
+  bouldering: V4
+
+single_records:
+  pull_ups: 20
+  muscle_ups: 2
+  push_ups: 50
+  handstand_push_ups: 10
+  one_arm_push_ups: 4
+  leg_raises: 15
+
+daily_logs:
+  - date: 2026-08-23
+    activities:
+      - type: park_run
+        duration: 15 min 54 sec
+  - date: 2026-08-21
+    activities:
+      - type: park_run
+        duration: 15 min 49 sec
+      - type: bouldering
+        grade: V5
+        count: 1
+      - type: muscle_ups
+        count: 2
+  - date: 2026-08-14
+    activities:
+      - type: bouldering
+        grade: V5
+        count: 1
+  - date: 2026-08-04
+    activities:
+      - type: muscle_ups
+        count: 6
+  - date: 2026-08-02
+    activities:
+      - type: muscle_ups
+        count: 5
+  - date: 2026-07-30
+    activities:
+      - type: pull_ups
+        count: 8
+  - date: 2026-07-29
+    activities:
+      - type: muscle_ups
+        count: 4
+  - date: 2026-07-27
+    activities:
+      - type: muscle_ups
+        count: 4
+      - type: run
+        duration: 15 min 19 sec
+  - date: 2026-07-25
+    activities:
+      - type: run
+        duration: 15 min 40 sec
+      - type: muscle_ups
+        count: 1
+  - date: 2026-07-19
+    activities:
+      - type: push_ups
+        breakdown: 20 * 5
+        total: 100
+      - type: dead_hang
+  - date: 2026-07-18
+    activities:
+      - type: run
+        duration: 16 min
+      - type: muscle_ups
+        breakdown: 1 + 1
+        total: 2
+  - date: 2026-07-16
+    activities:
+      - type: push_ups
+        breakdown: 20 * 5
+        total: 100
+      - type: dead_hang
+      - type: pull_ups
+        count: 5
+  - date: 2026-07-12
+    activities:
+      - type: muscle_ups
+        breakdown: 3 + 1
+        total: 4
+      - type: park_run
+        duration: 14 min 53 sec
+  - date: 2026-07-05
+    activities:
+      - type: muscle_ups
+        breakdown: 2 + 1
+        total: 3
+      - type: park_run
+        duration: 14 min 52 sec
+  - date: 2026-07-03
+    activities:
+      - type: muscle_ups
+        breakdown: 1+1+1
+        total: 3
+  - date: 2026-06-28
+    activities:
+      - type: muscle_ups
+        count: 2
+      - type: park_run
+        duration: 14 min 56 sec
+  - date: 2026-06-26
+    activities:
+      - type: muscle_ups
+        count: 1
+      - type: park_run
+        duration: 14 min 37 sec
+  - date: 2026-06-14
+    activities:
+      - type: park_run
+        duration: 14 min 37 sec
+  - date: 2026-05-23
+    activities:
+      - type: park_run
+        duration: 15 min 12 sec
+  - date: 2026-05-22
+    activities:
+      - type: pull_ups
+        breakdown: 17 + 10 * 3 + 8 + 5
+        total: 60
+      - type: push_ups
+        breakdown: 50 + 30 + 20 * 2
+        total: 120
+      - type: park_run
+        duration: 15 min 49 sec
+  - date: 2026-05-21
+    activities:
+      - type: one_arm_push_ups
+        breakdown: 5 * 5
+        total: 25
+      - type: park_run
+        duration: 15 min 26 sec
+  - date: 2026-05-10
+    activities:
+      - type: leg_raises
+        breakdown: 10 * 3
+        total: 30
+      - type: one_arm_push_ups
+        breakdown: 5 * 4
+        total: 20
+  - date: 2026-05-09
+    activities:
+      - type: leg_raises
+        breakdown: 15 + 5
+        total: 20
+  - date: 2026-04-18
+    activities:
+      - type: bouldering
+        grade: V4
+        count: 3
+        details: 1 flash
+  - date: 2026-04-08
+    activities:
+      - type: toes_to_bar
+        count: 10
+  - date: 2026-04-07
+    activities:
+      - type: one_arm_push_ups
+        breakdown: 4 * 3
+        total: 12
+        details: per arm
+      - type: push_ups
+        count: 50
+  - date: 2026-03-30
+    activities:
+      - type: bouldering
+        grade: V4
+        count: 2
+        details: 1 flash
+      - type: bouldering
+        grade: V3
+        count: 1
+        details: flash
+  - date: 2026-03-26
+    activities:
+      - type: push_ups
+        breakdown: 20 * 2
+        total: 40
+  - date: 2026-03-14
+    activities:
+      - type: pull_ups
+        weight: 12.5kg
+        breakdown: 7 * 2 + 6 * 2
+        total: 26
+      - type: pull_ups
+        count: 5
+      - type: leg_raises
+        count: 10
+  - date: 2026-03-12
+    activities:
+      - type: park_run
+        duration: 13 min 47 sec
+  - date: 2026-03-08
+    activities:
+      - type: bouldering
+        grade: V3
+        count: 3
+  - date: 2026-03-06
+    activities:
+      - type: leg_raises
+        breakdown: 10 * 4
+        total: 40
+  - date: 2026-03-05
+    activities:
+      - type: bouldering
+        grade: V3
+        count: 2
+  - date: 2026-03-04
+    activities:
+      - type: pull_ups
+        weight: 12.5kg
+        breakdown: 7 * 3 + 4
+        total: 25
+      - type: pull_ups
+        count: 5
+      - type: dips
+        weight: 12.5kg
+        breakdown: 7 * 3
+        total: 21
+      - type: push_ups
+        weight: 12.5kg
+        count: 20
+  - date: 2026-02-27
+    activities:
+      - type: bouldering
+        grade: V3
+        count: 1
+  - date: 2026-02-22
+    activities:
+      - type: unsworth_park_run
+        duration: 14 min 44 sec
+  - date: 2026-02-15
+    activities:
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2026-02-13
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 3
+        total: 13
+  - date: 2026-02-11
+    activities:
+      - type: pull_ups
+        count: 20
+  - date: 2026-02-09
+    activities:
+      - type: pull_ups
+        weight: 12.5kg
+        breakdown: 7 * 3 + 4
+        total: 25
+      - type: pull_ups
+        count: 3
+      - type: dips
+        weight: 12.5kg
+        breakdown: 5 * 2
+        total: 10
+      - type: push_ups
+        weight: 12.5kg
+        count: 20
+      - type: push_ups
+        count: 20
+  - date: 2026-02-03
+    activities:
+      - type: dips
+        count: 10
+  - date: 2026-01-29
+    activities:
+      - type: pull_ups
+        weight: 12.5kg
+        breakdown: 7 * 2 + 2
+        total: 16
+      - type: pull_ups
+        count: 5
+      - type: dips
+        weight: 12.5kg
+        breakdown: 7 * 2
+        total: 14
+  - date: 2026-01-13
+    activities:
+      - type: pull_ups
+        weight: 12.5kg
+        breakdown: 7 * 2 + 5 + 3 + 2
+        total: 24
+      - type: pull_ups
+        breakdown: 5 * 3
+        total: 15
+      - type: pull_ups
+        details: 3 finger
+        count: 2
+      - type: push_ups
+        weight: 12.5kg
+        breakdown: 10 * 4
+        total: 40
+      - type: push_ups
+        breakdown: 10 + 20
+        total: 30
+      - type: bicep_curls
+        weight: 6.5kg
+        breakdown: 10 * 3
+        total: 30
+      - type: l_sit_hold
+  - date: 2026-01-10
+    activities:
+      - type: pull_ups
+        weight: 15kg
+        breakdown: 5 + 4
+        total: 9
+      - type: pull_ups
+        count: 7
+      - type: push_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2026-01-07
+    activities:
+      - type: pull_ups
+        weight: 10kg
+        breakdown: 7 * 2 + 6 + 5 * 2
+        total: 30
+      - type: push_ups
+        weight: 10kg
+        breakdown: 20 + 10 * 4
+        total: 60
+      - type: pull_ups
+        count: 3
+      - type: push_ups
+        count: 10
+  - date: 2026-01-05
+    activities:
+      - type: pull_ups
+        weight: 10kg
+        breakdown: 10 + 7 + 5 * 2 + 2
+        total: 29
+      - type: pull_ups
+        count: 4
+      - type: push_ups
+        weight: 10kg
+        breakdown: 20 + 10 * 4
+        total: 60
+      - type: push_ups
+        count: 5
+  - date: 2026-01-03
+    activities:
+      - type: pull_ups
+        weight: 10kg
+        breakdown: 12 + 5 * 4
+        total: 32
+      - type: push_ups
+        weight: 10kg
+        breakdown: 20 + 10 * 4
+        total: 60
+      - type: bicep_curls
+        weight: 6.5kg
+        count: 10
+      - type: toes_to_bar
+        breakdown: 5 * 4
+        total: 15
+  - date: 2026-01-01
+    activities:
+      - type: pull_ups
+        weight: 20kg
+        count: 6
+      - type: pull_ups
+        weight: 10kg
+        breakdown: 10 + 2
+        total: 12
+      - type: pull_ups
+        breakdown: 4 + 5
+        total: 9
+      - type: toes_to_bar
+        count: 6
+  - date: 2025-12-28
+    activities:
+      - type: run
+        duration: 14 min 57 sec
+  - date: 2025-12-26
+    activities:
+      - type: pull_ups
+        weight: 20kg
+        count: 4
+      - type: push_ups
+        weight: 20kg
+        breakdown: 10 * 3
+        total: 30
+      - type: push_ups
+        count: 20
+      - type: l_sit_raises
+        count: 10
+  - date: 2025-12-24
+    activities:
+      - type: pull_ups
+        weight: 10kg
+        breakdown: 10 * 2 + 7 + 1
+        total: 28
+  - date: 2025-12-19
+    activities:
+      - type: pull_ups
+        count: 17
+  - date: 2025-12-18
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3 + 6
+        total: 36
+      - type: pull_ups
+        weight: 8kg
+        count: 9
+  - date: 2025-12-15
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+      - type: push_ups
+        breakdown: 50 + 20 + 10 * 3
+        total: 100
+  - date: 2025-09-17
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 3 * 3
+        total: 29
+      - type: push_ups
+        breakdown: 30 * 2 + 20 + 10 * 2
+        total: 100
+  - date: 2025-09-16
+    activities:
+      - type: pull_ups
+        breakdown: 18 + 7 + 5
+        total: 30
+      - type: push_ups
+        breakdown: 30 * 2
+        total: 60
+  - date: 2025-08-18
+    activities:
+      - type: pull_ups
+        breakdown: 16 + 7
+        total: 23
+      - type: push_ups
+        count: 55
+  - date: 2025-08-12
+    activities:
+      - type: pull_ups
+        count: 16
+      - type: push_ups
+        count: 50
+  - date: 2025-08-11
+    activities:
+      - type: pull_ups
+        count: 14
+      - type: push_ups
+        count: 20
+      - type: leg_raises
+        count: 15
+  - date: 2025-08-08
+    activities:
+      - type: push_ups
+        breakdown: 20 * 3 + 30 * 2
+        total: 120
+  - date: 2025-07-12
+    activities:
+      - type: pull_ups
+        details: 3 finger
+        count: 5
+  - date: 2025-07-06
+    activities:
+      - type: pull_ups
+        details: 3 finger
+        count: 4
+      - type: pull_ups
+        details: 4 finger
+        count: 4
+      - type: pull_ups
+        count: 10
+  - date: 2025-07-04
+    activities:
+      - type: pull_ups
+        count: 16
+  - date: 2025-07-03
+    activities:
+      - type: pull_ups
+        count: 15
+  - date: 2025-06-25
+    activities:
+      - type: pull_ups
+        details: 3 fingers
+        breakdown: 4 + 1
+        total: 5
+      - type: pull_ups
+        details: 4 fingers
+        breakdown: 2 * 2 + 1 + 2
+        total: 7
+      - type: pull_ups
+        breakdown: 13 + 3
+        total: 16
+      - type: finger_hang
+        details: 4 fingers
+        duration: 20 sec
+  - date: 2025-06-22
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 3 * 2 + 1 + 5 * 2
+        total: 27
+  - date: 2025-06-19
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 3
+        total: 18
+  - date: 2025-05-20
+    activities:
+      - type: pull_ups
+        count: 15
+  - date: 2025-05-13
+    activities:
+      - type: pull_ups
+        count: 13
+  - date: 2025-05-12
+    activities:
+      - type: pull_ups
+        breakdown: 13 + 10
+        total: 23
+  - date: 2025-05-07
+    activities:
+      - type: push_ups
+        breakdown: 35 + 17 + 10 * 7 + 15 * 2
+        total: 152
+      - type: bicep_curls
+        weight: 6.5kg
+        breakdown: 10 * 3 + 5
+        total: 35
+      - type: pull_ups
+        breakdown: 8 + 3 + 4
+        total: 15
+  - date: 2025-05-05
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 10 * 2 + 4 + 1 * 2
+        total: 41
+  - date: 2025-05-04
+    activities:
+      - type: plank
+        duration: 1 min
+  - date: 2025-05-03
+    activities:
+      - type: pull_ups
+        count: 10
+      - type: push_ups
+        breakdown: 20 * 4 + 25 + 18 + 15
+        total: 138
+  - date: 2025-05-02
+    activities:
+      - type: push_ups
+        count: 35
+      - type: pull_ups
+        breakdown: 10 + 5 * 6
+        total: 40
+  - date: 2025-04-26
+    activities:
+      - type: push_ups
+        breakdown: 55 + 20 * 4 + 15
+        total: 150
+  - date: 2025-04-23
+    activities:
+      - type: push_ups
+        breakdown: 20 * 3 + 40
+        total: 100
+  - date: 2025-04-12
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 5 + 3 + 2 + 7
+        total: 32
+  - date: 2025-03-23
+    activities:
+      - type: pull_ups
+        breakdown: 8 + 6 + 4
+        total: 18
+      - type: push_ups
+        breakdown: 10 * 3 + 20 * 2 + 30
+        total: 100
+  - date: 2025-01-11
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 5 * 3 + 3 * 3 + 1
+        total: 40
+      - type: push_ups
+        breakdown: 20 * 4
+        total: 80
+  - date: 2025-01-06
+    activities:
+      - type: pull_ups
+        count: 12
+  - date: 2024-12-25
+    activities:
+      - type: left_arm_push_ups
+        breakdown: 3 + 5
+        total: 8
+      - type: right_arm_push_ups
+        breakdown: 3 + 5
+        total: 8
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 + 3 + 2
+        total: 30
+  - date: 2024-11-21
+    activities:
+      - type: push_ups
+        breakdown: 50 + 30
+        total: 80
+  - date: 2024-08-11
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 + 4 + 3
+        total: 32
+      - type: chin_ups
+        count: 3
+  - date: 2024-05-15
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 8
+        total: 80
+  - date: 2024-04-08
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 3 + 4 + 1 * 2
+        total: 31
+  - date: 2024-04-01
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 2 + 3 * 2 + 2 * 2
+        total: 30
+  - date: 2024-03-05
+    activities:
+      - type: push_ups
+        breakdown: 50 * 3
+        total: 150
+  - date: 2024-02-23
+    activities:
+      - type: pull_ups
+        breakdown: 17 + 3 + 5 * 5 + 2 * 2 + 1
+        total: 50
+      - type: push_ups
+        count: 30
+  - date: 2023-12-29
+    activities:
+      - type: push_ups
+        breakdown: 50 + 20 * 7 + 10 * 2 + 3
+        total: 213
+      - type: pull_ups
+        breakdown: 10 * 2 + 7
+        total: 27
+  - date: 2023-12-18
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 5
+        total: 35
+      - type: push_ups
+        count: 20
+  - date: 2023-12-11
+    activities:
+      - type: handstand_push_ups
+        count: 1
+      - type: push_ups
+        breakdown: 50 + 20 * 7 + 10 * 2
+        total: 210
+      - type: pull_ups
+        breakdown: 10 + 5 * 2
+        total: 20
+  - date: 2023-11-20
+    activities:
+      - type: handstand_push_ups
+        count: 8
+  - date: 2023-11-19
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3
+        total: 30
+  - date: 2023-11-07
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3
+        total: 30
+      - type: handstand_push_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2023-10-25
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 7 + 5 * 3 + 4
+        total: 36
+      - type: handstand_push_ups
+        breakdown: 9 + 1
+        total: 10
+  - date: 2023-10-22
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+      - type: handstand_push_ups
+        breakdown: 10 + 3 * 2
+        total: 16
+  - date: 2023-10-09
+    activities:
+      - type: handstand_push_ups
+        breakdown: 5 + 4 + 3
+        total: 12
+      - type: pull_ups
+        count: 5
+  - date: 2023-10-08
+    activities:
+      - type: tuck_toes_to_bar
+        breakdown: 5 * 2
+        total: 10
+      - type: handstand_push_ups
+        breakdown: 5 * 4 + 7 + 8
+        total: 35
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 * 2
+        total: 30
+  - date: 2023-09-30
+    activities:
+      - type: toes_to_bar
+        breakdown: 5 + 3
+        total: 8
+      - type: tuck_toes_to_bar
+        count: 4
+      - type: pull_ups
+        count: 10
+      - type: handstand_push_ups
+        count: 10
+  - date: 2023-09-25
+    activities:
+      - type: toes_to_bar
+        breakdown: 6 + 3 * 2
+        total: 12
+      - type: chin_ups
+        count: 4
+      - type: handstand_push_ups
+        breakdown: 10 + 5
+        total: 15
+      - type: pull_ups
+        count: 10
+      - type: push_ups
+        count: 25
+  - date: 2023-09-23
+    activities:
+      - type: pull_ups
+        count: 5
+      - type: handstand_push_ups
+        count: 10
+  - date: 2023-09-17
+    activities:
+      - type: tuck_toes_to_bar
+        breakdown: 3 + 2
+        total: 5
+      - type: hanging_l_sit_hold
+        duration: 10 sec
+  - date: 2023-09-15
+    activities:
+      - type: tuck_toes_to_bar
+        breakdown: 5 * 2 + 3
+        total: 13
+      - type: pull_ups
+        breakdown: 10 * 2 + 7 + 5 * 3 + 4
+        total: 46
+      - type: push_ups
+        breakdown: 30 + 20 * 5
+        total: 130
+  - date: 2023-08-28
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3 + 5 * 2
+        total: 40
+      - type: push_ups
+        breakdown: 50 + 20
+        total: 70
+      - type: handstand_press
+        count: 3
+      - type: handstand_push_ups
+        breakdown: 5 * 2
+        total: 10
+  - date: 2023-08-19
+    activities:
+      - type: push_ups
+        breakdown: 75 + 25 + 20 * 3
+        total: 160
+      - type: pull_ups
+        breakdown: 15 + 10 * 3 + 5 + 7 + 3 * 3
+        total: 66
+  - date: 2023-08-12
+    activities:
+      - type: handstand_press
+        breakdown: 3 * 3 + 1 * 5
+        total: 14
+      - type: pull_ups
+        breakdown: 19 + 3 * 3 + 2
+        total: 30
+      - type: push_ups
+        count: 50
+  - date: 2023-08-09
+    activities:
+      - type: handstand_press
+        breakdown: 8 + 7 * 2 + 6 + 3 + 2 + 1 * 4
+        total: 37
+  - date: 2023-08-08
+    activities:
+      - type: handstand_press
+        breakdown: 2 * 2 + 1 * 4 + 6 + 3 + 5 + 7
+        total: 29
+      - type: pull_ups
+        count: 19
+  - date: 2023-07-30
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 10
+        total: 25
+      - type: handstand_push_ups
+        count: 5
+  - date: 2023-07-15
+    activities:
+      - type: pull_ups
+        count: 17
+      - type: push_ups
+        count: 50
+      - type: handstand_push_ups
+        count: 5
+  - date: 2023-07-12
+    activities:
+      - type: handstand_push_ups
+        breakdown: 9 + 6 + 5
+        total: 20
+      - type: pull_ups
+        count: 15
+      - type: push_ups
+        count: 50
+  - date: 2023-07-09
+    activities:
+      - type: handstand_push_ups
+        breakdown: 5 * 3 + 4
+        total: 19
+      - type: push_ups
+        breakdown: 50 + 20
+        total: 70
+      - type: pull_ups
+        count: 10
+  - date: 2023-07-07
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 10 + 3
+        total: 25
+      - type: handstand_push_ups
+        count: 5
+  - date: 2023-07-04
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+      - type: push_ups
+        count: 50
+  - date: 2023-07-03
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 4 + 5
+        total: 45
+      - type: handstand_push_ups
+        breakdown: 5 * 3 + 4 + 3 + 7 + 2 * 2
+        total: 33
+      - type: push_ups
+        breakdown: 50 + 30 + 20
+        total: 100
+  - date: 2023-06-29
+    activities:
+      - type: handstand_push_ups
+        breakdown: 8 + 5 + 7 + 2 * 2 + 3
+        total: 27
+      - type: pull_ups
+        count: 10
+      - type: push_ups
+        count: 50
+  - date: 2023-06-28
+    activities:
+      - type: handstand_push_ups
+        breakdown: 5 * 2 + 2 * 3 + 1 * 2 + 3 * 2
+        total: 24
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        count: 10
+  - date: 2023-06-26
+    activities:
+      - type: handstand_push_ups
+        breakdown: 3 * 3 + 4 + 5 + 2
+        total: 20
+      - type: pull_ups
+        breakdown: 19 + 5
+        total: 24
+      - type: push_ups
+        breakdown: 85 + 15
+        total: 100
+  - date: 2023-06-24
+    activities:
+      - type: handstand_push_ups
+        breakdown: 2 + 3 + 5 + 1 * 2 + 2 * 2
+        total: 16
+      - type: pull_ups
+        breakdown: 17 + 5
+        total: 22
+      - type: push_ups
+        count: 50
+  - date: 2023-06-22
+    activities:
+      - type: pull_ups
+        count: 15
+      - type: handstand_push_ups
+        breakdown: 5 * 2
+        total: 10
+      - type: push_ups
+        count: 50
+  - date: 2023-06-21
+    activities:
+      - type: push_ups
+        breakdown: 50 + 20
+        total: 70
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+      - type: handstand_push_ups
+        breakdown: 5 + 1 * 2 + 2
+        total: 9
+  - date: 2023-06-20
+    activities:
+      - type: handstand_push_ups
+        breakdown: 1 + 2 + 5
+        total: 8
+      - type: push_ups
+        count: 60
+      - type: pull_ups
+        count: 10
+  - date: 2023-06-19
+    activities:
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        breakdown: 10 + 15
+        total: 25
+      - type: handstand_push_ups
+        breakdown: 5 * 2 + 4
+        total: 14
+  - date: 2023-06-17
+    activities:
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        count: 10
+      - type: handstand_push_ups
+        count: 5
+  - date: 2023-06-16
+    activities:
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        count: 10
+      - type: handstand_push_ups
+        count: 5
+  - date: 2023-06-06
+    activities:
+      - type: push_ups
+        count: 50
+      - type: pull_ups
+        count: 16
+  - date: 2023-06-05
+    activities:
+      - type: push_ups
+        breakdown: 50 + 30 + 20 * 2
+        total: 120
+      - type: pull_ups
+        breakdown: 15 + 10
+        total: 25
+  - date: 2023-05-28
+    activities:
+      - type: pull_ups
+        breakdown: 14 + 10 + 7 + 9 + 5
+        total: 45
+      - type: push_ups
+        breakdown: 40 + 30 * 2
+        total: 100
+  - date: 2023-05-24
+    activities:
+      - type: pull_ups
+        count: 17
+      - type: push_ups
+        breakdown: 50 * 2 + 30
+        total: 130
+  - date: 2023-05-21
+    activities:
+      - type: pull_ups
+        count: 15
+  - date: 2023-05-20
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 10 * 2 + 7 * 3 + 2 + 5 * 3 + 2
+        total: 75
+  - date: 2023-05-19
+    activities:
+      - type: pull_ups
+        count: 15
+  - date: 2023-05-16
+    activities:
+      - type: pull_ups
+        count: 20
+  - date: 2023-05-11
+    activities:
+      - type: pull_ups
+        count: 15
+  - date: 2023-04-29
+    activities:
+      - type: push_ups
+        breakdown: 20 * 9
+        total: 180
+  - date: 2023-04-24
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+      - type: push_ups
+        breakdown: 40 + 20 * 6
+        total: 160
+      - type: run
+        duration: 15 min 8 sec
+  - date: 2023-04-23
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3 + 5 * 4 + 7
+        total: 57
+      - type: push_ups
+        breakdown: 30 + 70 + 50
+        total: 150
+  - date: 2023-04-22
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 5
+        total: 25
+  - date: 2023-04-16
+    activities:
+      - type: run
+        duration: 15 min 22 sec
+  - date: 2023-04-15
+    activities:
+      - type: pull_ups
+        breakdown: 20 + 6 + 5 * 5 + 4 * 3
+        total: 63
+      - type: push_ups
+        breakdown: 60 + 30 + 20
+        total: 110
+  - date: 2023-04-10
+    activities:
+      - type: push_ups
+        breakdown: 80 + 20
+        total: 100
+  - date: 2023-04-03
+    activities:
+      - type: run
+        duration: 15 min 44 sec
+  - date: 2023-04-01
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 10 * 3 + 3
+        total: 45
+      - type: push_ups
+        breakdown: 25 * 12 + 15 + 10
+        total: 325
+  - date: 2023-03-28
+    activities:
+      - type: push_ups
+        count: 70
+  - date: 2023-03-26
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 7 * 3 + 5 * 2 + 4 * 2 + 3 * 2 + 2 * 2 + 1
+        total: 60
+  - date: 2023-03-22
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 3 * 2 + 2 * 2 + 4 * 3 + 5 * 4
+        total: 54
+  - date: 2023-03-21
+    activities:
+      - type: push_ups
+        breakdown: 70 + 20
+        total: 90
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2023-03-12
+    activities:
+      - type: run
+        duration: 15 min 40 sec
+  - date: 2023-03-04
+    activities:
+      - type: pull_ups
+        breakdown: 14 + 10 + 4 * 5 + 5 * 2
+        total: 54
+      - type: push_ups
+        breakdown: 30 + 10 * 2 + 20 * 2
+        total: 90
+  - date: 2023-02-25
+    activities:
+      - type: push_ups
+        breakdown: 20 * 11 + 10 * 5 + 40 + 12
+        total: 322
+      - type: pull_ups
+        breakdown: 10 + 5 * 3
+        total: 25
+  - date: 2023-02-03
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 * 7 + 2
+        total: 57
+      - type: push_ups
+        breakdown: 20 * 4 + 10
+        total: 90
+  - date: 2023-02-01
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 5 + 5 + 3
+        total: 58
+      - type: pull_ups
+        breakdown: 13 + 5 * 3 + 3
+        total: 31
+  - date: 2023-01-22
+    activities:
+      - type: push_ups
+        breakdown: 50 + 20 * 4 + 10
+        total: 140
+      - type: bicep_curls
+        breakdown: 16 + 10 * 2
+        total: 36
+  - date: 2023-01-15
+    activities:
+      - type: push_ups
+        breakdown: 55 + 30 + 20 + 25
+        total: 130
+  - date: 2023-01-08
+    activities:
+      - type: pull_ups
+        breakdown: 18 + 10 + 5 * 2 + 3 * 2 + 4
+        total: 48
+  - date: 2023-01-07
+    activities:
+      - type: push_ups
+        breakdown: 50 + 30 + 20 * 2 + 25 + 15 + 10 * 3 + 11 * 2 + 8 * 2
+        total: 228
+      - type: pull_ups
+        breakdown: 10 + 8
+        total: 18
+      - type: run
+        duration: 15 min 42 sec
+  - date: 2023-01-02
+    activities:
+      - type: run
+        duration: 16 min 09 sec
+  - date: 2023-01-01
+    activities:
+      - type: push_ups
+        count: 50
+  - date: 2022-12-31
+    activities:
+      - type: pull_ups
+        breakdown: 16 + 5 * 5 + 4 * 2 + 3 * 3 + 2 + 1 * 3
+        total: 63
+      - type: push_ups
+        breakdown: 30 + 20 * 4 + 15 * 4 + 10 * 3 + 7 * 2 + 6
+        total: 220
+  - date: 2022-12-29
+    activities:
+      - type: pull_ups
+        breakdown: 14 + 6 + 5 * 3 + 4 + 2 * 3 + 3 * 2
+        total: 51
+      - type: push_ups
+        breakdown: 25 + 20 + 10 * 4 + 15
+        total: 110
+  - date: 2022-12-25
+    activities:
+      - type: leg_raises
+        breakdown: 10 * 4 + 6
+        total: 46
+      - type: sit_ups
+        breakdown: 30 * 2 + 15
+        total: 75
+      - type: plank
+        duration: 1 min
+      - type: pull_ups
+        count: 10
+  - date: 2022-12-23
+    activities:
+      - type: push_ups
+        count: 260
+  - date: 2022-12-18
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 5 + 5 + 4 * 3 + 3 * 2
+        total: 73
+      - type: crunches
+        count: 50
+      - type: push_ups
+        count: 50
+  - date: 2022-12-03
+    activities:
+      - type: push_ups
+        breakdown: 40 + 30 * 2 + 20 * 5 + 10 * 3
+        total: 230
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2022-11-22
+    activities:
+      - type: leg_raises
+        breakdown: 20 + 16 + 13 + 11 + 10
+        total: 70
+      - type: knee_raises
+        breakdown: 10 + 15
+        total: 15
+      - type: sit_ups
+        count: 50
+  - date: 2022-11-18
+    activities:
+      - type: leg_raises
+        breakdown: 10 * 3 + 5
+        total: 35
+      - type: pull_ups
+        breakdown: 5 + 4 + 3 + 2 * 3 + 1 * 2
+        total: 20
+  - date: 2022-11-15
+    activities:
+      - type: pull_ups
+        count: 20
+  - date: 2022-11-13
+    activities:
+      - type: push_ups
+        breakdown: 30 * 2 + 20 + 10
+        total: 90
+      - type: pull_ups
+        breakdown: 10 + 4
+        total: 14
+  - date: 2022-11-11
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 6 + 4 * 5 + 3 * 2 + 2 * 4 + 1
+        total: 61
+      - type: push_ups
+        count: 20
+  - date: 2022-11-08
+    activities:
+      - type: push_ups
+        breakdown: 70 + 5 * 3
+        total: 85
+      - type: pull_ups
+        breakdown: 10 * 2
+        total: 20
+  - date: 2022-10-29
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 18 + 3
+        total: 36
+      - type: push_ups
+        breakdown: 26 + 20
+        total: 46
+  - date: 2022-10-28
+    activities:
+      - type: pull_ups
+        count: 17
+  - date: 2022-10-27
+    activities:
+      - type: sit_ups
+        count: 44
+      - type: push_ups
+        count: 72
+      - type: pull_ups
+        count: 14
+  - date: 2022-09-13
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 10 + 5 * 2
+        total: 32
+      - type: push_ups
+        count: 30
+  - date: 2022-09-06
+    activities:
+      - type: push_ups
+        breakdown: 30 + 20 * 11 + 10 + 15
+        total: 275
+      - type: pull_ups
+        breakdown: 12 + 10 * 2 + 3 * 2 + 6 * 6 + 4 + 3 * 2 + 2 * 4
+        total: 92
+      - type: leg_raises
+        breakdown: 10 * 2 + 3
+        total: 23
+  - date: 2022-08-30
+    activities:
+      - type: push_ups
+        breakdown: 65 + 30 * 3 + 20 + 10 * 2 + 25
+        total: 220
+  - date: 2022-08-29
+    activities:
+      - type: push_ups
+        breakdown: 76 + 20 * 2
+        total: 116
+      - type: pull_ups
+        breakdown: 14 + 10 + 4
+        total: 28
+  - date: 2022-08-25
+    activities:
+      - type: pull_ups
+        breakdown: 20 + 10 + 5 * 5
+        total: 55
+      - type: push_ups
+        breakdown: 30 * 2 + 20
+        total: 80
+  - date: 2022-08-24
+    activities:
+      - type: push_ups
+        count: 75
+      - type: pull_ups
+        breakdown: 12 + 5 * 3
+        total: 27
+  - date: 2022-08-21
+    activities:
+      - type: push_ups
+        count: 71
+  - date: 2022-08-13
+    activities:
+      - type: push_ups
+        count: 60
+  - date: 2022-08-06
+    activities:
+      - type: plank
+        duration: 1 min
+      - type: leg_raises
+        breakdown: 18 + 12
+        total: 30
+      - type: sit_ups
+        count: 50
+      - type: push_ups
+        breakdown: 35 + 25 + 20 * 3 + 30 + 10
+        total: 160
+      - type: pull_ups
+        breakdown: 10 * 2 + 3 * 4 + 7 + 4 * 2 + 5 * 4 + 2 * 2 + 1
+        total: 72
+  - date: 2022-07-31
+    activities:
+      - type: push_ups
+        count: 60
+      - type: pull_ups
+        count: 10
+  - date: 2022-07-27
+    activities:
+      - type: push_ups
+        breakdown: 50 * 2 + 20 * 3 + 10 * 3 + 15
+        total: 205
+      - type: pull_ups
+        breakdown: 10 * 3 + 4 * 3 + 3
+        total: 45
+      - type: bicep_curls
+        weight: 6.5kg
+        breakdown: 15 + 12 + 10
+        total: 37
+  - date: 2022-07-09
+    activities:
+      - type: push_ups
+        breakdown: 60 + 50 + 20 * 2
+        total: 150
+      - type: bicep_curls
+        weight: 6.5kg
+        breakdown: 12 * 3
+        total: 36
+  - date: 2022-06-25
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 10 + 4 * 2 + 7 + 3
+        total: 40
+      - type: push_ups
+        breakdown: 50 + 20 + 10
+        total: 80
+  - date: 2022-06-21
+    activities:
+      - type: pull_ups
+        count: 20
+  - date: 2022-06-16
+    activities:
+      - type: push_ups
+        count: 36
+      - type: pull_ups
+        breakdown: 18 + 6 + 5 + 4
+        total: 33
+  - date: 2022-05-18
+    activities:
+      - type: push_ups
+        breakdown: 60 + 20 + 12 * 2 + 16 + 10 * 2 + 15
+        total: 155
+      - type: pull_ups
+        breakdown: 6 + 4 * 2 + 10 + 5 * 2 + 3 + 2
+        total: 39
+  - date: 2022-04-25
+    activities:
+      - type: pull_ups
+        breakdown: 7 + 12 + 5 * 2 + 6 + 3
+        total: 38
+      - type: push_ups
+        breakdown: 10 * 7 + 30
+        total: 100
+      - type: right_hand_push_ups
+        count: 3
+      - type: left_hand_push_ups
+        count: 3
+  - date: 2022-04-23
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3 + 2 * 2 + 7 + 5 * 5 + 3 + 1
+        total: 70
+      - type: right_hand_push_ups
+        count: 3
+      - type: left_hand_push_ups
+        count: 3
+      - type: push_ups
+        breakdown: 20 + 10
+        total: 30
+      - type: bridge
+  - date: 2022-04-17
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 3 + 5 * 4 + 2 + 3 * 4 + 1 * 2
+        total: 68
+      - type: push_ups
+        breakdown: 50 + 20 + 15 * 2 + 10 * 5
+        total: 150
+  - date: 2022-03-31
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 * 3 + 3 * 2 + 7 + 2
+        total: 50
+      - type: push_ups
+        breakdown: 25 + 20 + 10 * 4 + 15 * 2
+        total: 115
+  - date: 2022-03-21
+    activities:
+      - type: pull_ups
+        breakdown: 9 + 11 + 5 * 4
+        total: 40
+  - date: 2022-03-06
+    activities:
+      - type: pull_ups
+        breakdown: 16 + 10 * 2 + 5 * 2 + 8 + 4 + 2
+        total: 60
+      - type: push_ups
+        breakdown: 50 + 20
+        total: 70
+  - date: 2022-03-01
+    activities:
+      - type: pull_ups
+        breakdown: 16 + 4 * 3 + 6 + 3 * 4 + 2 + 1 + 5
+        total: 54
+      - type: push_ups
+        breakdown: 50 + 20 * 2 + 10 * 5
+        total: 140
+  - date: 2022-02-07
+    activities:
+      - type: push_ups
+        count: 67
+  - date: 2022-02-06
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 7 + 3 * 2 + 2
+        total: 53
+  - date: 2022-01-14
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 7 + 3 + 2
+        total: 50
+  - date: 2022-01-01
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 3 * 6 + 5 + 3 + 2 * 3
+        total: 47
+      - type: push_ups
+        breakdown: 30 + 20 * 2 + 10 * 11 + 15 + 5
+        total: 200
+  - date: 2021-12-26
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5 * 4 + 4 * 2 + 2 * 2 + 1
+        total: 43
+      - type: sit_ups
+        count: 77
+      - type: plank
+        duration: 1 minute
+      - type: push_ups
+        breakdown: 35 + 25 + 10
+        total: 70
+      - type: bicep_curls
+        breakdown: 15 + 10
+        total: 25
+  - date: 2021-12-21
+    activities:
+      - type: sit_ups
+        count: 50
+      - type: push_ups
+        breakdown: 50 + 20 + 10
+        total: 80
+      - type: pull_ups
+        count: 5
+  - date: 2021-12-19
+    activities:
+      - type: handstand_push_ups
+        breakdown: 2 * 5 + 7
+        total: 17
+      - type: pull_ups
+        breakdown: 10 + 6 + 5 + 4 * 2 + 3 * 2 + 2
+        total: 37
+      - type: push_ups
+        breakdown: 50 + 20 + 10 * 4
+        total: 110
+  - date: 2021-12-09
+    activities:
+      - type: waist_pull_ups
+        breakdown: 5 + 4
+        total: 9
+      - type: pull_ups
+        breakdown: 5 * 3 + 3 * 2
+        total: 21
+      - type: push_ups
+        breakdown: 25 * 3
+        total: 75
+  - date: 2021-12-08
+    activities:
+      - type: push_ups
+        breakdown: 50 + 20 * 2 + 10 * 3 + 15
+        total: 135
+      - type: pull_ups
+        breakdown: 8 + 3 * 4
+        total: 20
+  - date: 2021-12-05
+    activities:
+      - type: push_ups
+        breakdown: 20 * 4 + 30
+        total: 110
+      - type: pull_ups
+        breakdown: 7 + 3 + 2
+        total: 13
+  - date: 2021-11-29
+    activities:
+      - type: pull_ups
+        breakdown: 5 * 6
+        total: 30
+      - type: push_ups
+        breakdown: 30 + 20 + 10 * 5
+        total: 100
+  - date: 2021-10-23
+    activities:
+      - type: push_ups
+        breakdown: 30 * 2 + 20 * 2
+        total: 100
+      - type: pull_ups
+        breakdown: 10 * 3 + 5 + 3 + 2
+        total: 40
+  - date: 2021-09-09
+    activities:
+      - type: push_ups
+        count: 50
+  - date: 2021-09-07
+    activities:
+      - type: push_ups
+        breakdown: 60 + 30
+        total: 90
+      - type: pull_ups
+        count: 15
+  - date: 2021-08-29
+    activities:
+      - type: push_ups
+        count: 60
+      - type: pull_ups
+        count: 10
+  - date: 2021-08-15
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 5 + 3 + 3
+        total: 26
+      - type: push_ups
+        count: 35
+  - date: 2021-08-13
+    activities:
+      - type: push_ups
+        breakdown: 70 + 50 + 20 * 2 + 10 * 4 + 8
+        total: 208
+  - date: 2021-08-07
+    activities:
+      - type: push_ups
+        breakdown: 60 + 30 + 20 * 3 + 10 * 4 + 9
+        total: 199
+  - date: 2021-08-02
+    activities:
+      - type: pull_ups
+        breakdown: 10 * 2 + 5 + 3 * 3 + 1
+        total: 35
+      - type: push_ups
+        breakdown: 30 + 20
+        total: 50
+  - date: 2021-07-29
+    activities:
+      - type: push_ups
+        breakdown: 50 + 20 * 4 + 10 * 6 + 8 + 2
+        total: 200
+  - date: 2021-07-05
+    activities:
+      - type: bridge
+      - type: handstand_push_ups
+        breakdown: 10 * 2 + 8
+        total: 28
+      - type: pull_ups
+        breakdown: 10 + 8 + 7 + 5 + 3 + 2
+        total: 35
+      - type: push_ups
+        breakdown: 40 + 20
+        total: 60
+  - date: 2021-07-02
+    activities:
+      - type: pull_ups
+        breakdown: 16 + 10 + 8
+        total: 34
+      - type: push_ups
+        breakdown: 65 + 10 * 2
+        total: 85
+  - date: 2021-06-26
+    activities:
+      - type: pull_ups
+        breakdown: 15 + 5 * 2 + 3 * 2 + 2
+        total: 33
+      - type: push_ups
+        breakdown: 50 + 15 * 3 + 30 + 10 * 2
+        total: 145
+  - date: 2021-06-18
+    activities:
+      - type: handstand_push_ups
+        breakdown: 10 + 4
+        total: 14
+      - type: pull_ups
+        breakdown: 10 + 5 * 4
+        total: 30
+      - type: push_ups
+        breakdown: 60 + 30 + 20
+        total: 110
+  - date: 2021-06-10
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 5
+        total: 15
+      - type: push_ups
+        breakdown: 50 + 60 + 40 + 10
+        total: 160
+  - date: 2021-06-07
+    activities:
+      - type: pull_ups
+        breakdown: 10 + 10 + 5 + 3 + 1 * 2
+        total: 30
+      - type: push_ups
+        breakdown: 35 + 15
+        total: 50
+  - date: 2021-05-31
+    activities:
+      - type: handstand_push_ups
+        breakdown: 10 + 5 * 2
+        total: 20
+      - type: push_ups
+        breakdown: 30 * 2 + 20 + 10 * 2
+        total: 100
+      - type: pull_ups
+        breakdown: 12 + 5 + 3
+        total: 20
+  - date: 2021-04-06
+    activities:
+      - type: push_ups
+        breakdown: 25 * 2 + 10 * 4 + 15 + 20
+        total: 125
+      - type: pull_ups
+        breakdown: 10 + 5 * 2 + 7
+        total: 27
+  - date: 2021-03-02
+    activities:
+      - type: pull_ups
+        breakdown: 12 + 8 + 4 + 3 * 2
+        total: 30
+      - type: push_ups
+        breakdown: 50 + 10 * 5
+        total: 100
+  - date: 2020-11-26
+    activities:
+      - type: handstand_attempt
+  - date: 2020-10-28
+    activities:
+      - type: clap_push_ups
+        count: 20
+  - date: 2020-10-20
+    activities:
+      - type: handstand_push_ups
+        breakdown: 15 + 8 + 3
+        total: 26
+      - type: push_ups
+        count: 50
+  - date: 2019-08-24
+    activities:
+      - type: handstand_push_ups
+        breakdown: 10+5
+      - type: push_ups
+        breakdown: 50 + 30 + 20
+        total: 100
+      - type: edge_hang
+        duration: 15 sec
+        details: in preparation for edge hang pull up
+  - date: 2019-07-18
+    activities:
+      - type: handstand_push_ups
+        breakdown: 3 + 10 + 5
+      - type: bridge
+        details: 20 breaths
+      - type: leg_raises
+        count: 30
+      - type: pull_ups
+        breakdown: 4 * 2 + 2 + 5
+        total: 15
+      - type: push_ups
+        count: 50
+  - date: 2019-07-12
+    activities:
+      - type: handstand_push_ups
+        breakdown: 10 + 3 + 2*2
+        total: 17
+  - date: 2019-07-07
+    activities:
+      - type: handstand_push_ups
+        breakdown: 10 + 2 + 2
+      - type: push_ups
+        breakdown: 50 + 10
+  - date: 2019-07-02
+    activities:
+      - type: push_ups
+        breakdown: 40 * 3
+      - type: handstand_wall_push_ups
+        count: 10
+  - date: 2019-06-26
+    activities:
+      - type: push_ups
+        breakdown: 40 * 2 + 20 + 10 * 3
+        total: 130
+      - type: handstand_attempt
+      - type: bridge
+        details: 10 breaths * 3
+      - type: leg_raises
+        count: 30
+  - date: 2019-05-11
+    activities:
+      - type: handstand_attempt
+      - type: bridge
+      - type: leg_raises
+        count: 30
+      - type: push_ups
+        breakdown: 20 * 3 + 10 * 3 + 40
+        total: 130
+  - date: 2019-05-10
+    activities:
+      - type: handstand_attempt
+  - date: 2019-05-04
+    activities:
+      - type: push_ups
+        breakdown: 20 * 3 + 30 + 12
+        total: 102
+      - type: handstand_push_ups
+        breakdown: 7 + 3
+      - type: pull_ups
+        count: 2
+      - type: bridge
+        details: 10 breath
+      - type: leg_raises
+        count: 20
+  - date: 2018-07-05
+    activities:
+      - type: push_ups
+        breakdown: 40 * 2 + 10 + 30 + 20
+        total: 140
+  - date: 2017-04-06
+    activities:
+      - type: push_ups
+        breakdown: 80 + 60 + 30 + 20 + 10
+        total: 200
+  - date: 2015-09-26
+    activities:
+      - type: push_ups
+        breakdown: 50*2+20*5+30+10*4+15*2
+        total: 300
+  - date: 2015-08-30
+    activities:
+      - type: push_ups
+        breakdown: 80 + 50 * 2 + 30*3
+        total: 270
+  - date: 2015-02-03
+    activities:
+      - type: push_ups
+        count: 100
+  - date: 2015-01-22
+    activities:
+      - type: push_ups
+        breakdown: 40 * 3
+        total: 120
