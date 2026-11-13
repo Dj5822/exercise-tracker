@@ -582,10 +582,7 @@ daily_logs:
         count: 12
   - date: 2024-12-25
     activities:
-      - type: left_hand_push_ups
-        breakdown: 3 + 5
-        total: 8
-      - type: right_hand_push_ups
+      - type: one_arm_push_ups
         breakdown: 3 + 5
         total: 8
       - type: pull_ups
@@ -1397,18 +1394,14 @@ daily_logs:
       - type: push_ups
         breakdown: 10 * 7 + 30
         total: 100
-      - type: right_hand_push_ups
-        count: 3
-      - type: left_hand_push_ups
+      - type: one_arm_push_ups
         count: 3
   - date: 2022-04-23
     activities:
       - type: pull_ups
         breakdown: 10 * 3 + 2 * 2 + 7 + 5 * 5 + 3 + 1
         total: 70
-      - type: right_hand_push_ups
-        count: 3
-      - type: left_hand_push_ups
+      - type: one_arm_push_ups
         count: 3
       - type: push_ups
         breakdown: 20 + 10
@@ -1510,12 +1503,9 @@ daily_logs:
         total: 110
   - date: 2021-12-09
     activities:
-      - type: waist_pull_ups
-        breakdown: 5 + 4
-        total: 9
       - type: pull_ups
-        breakdown: 5 * 3 + 3 * 2
-        total: 21
+        breakdown: 5 + 4 + 5 * 3 + 3 * 2
+        total: 30
       - type: push_ups
         breakdown: 25 * 3
         total: 75
@@ -1685,7 +1675,7 @@ daily_logs:
       - type: handstand_attempt
   - date: 2020-10-28
     activities:
-      - type: clap_push_ups
+      - type: push_ups
         count: 20
   - date: 2020-10-20
     activities:
