@@ -1,4 +1,3 @@
-import { Box, Chip, Stack, Typography } from "@mui/material";
 import { DailyLog } from "../types/records";
 import { describeActivity, formatDate, humanize } from "../utils/records";
 
@@ -8,45 +7,31 @@ interface Props {
 
 const DailyLogList = ({ logs }: Props) => {
     if (logs.length === 0) {
-        return <Typography color="text.secondary">No activity recorded.</Typography>;
+        return <p className="py-8 text-center text-sm text-[var(--text-muted)]">No activity recorded yet.</p>;
     }
 
     return (
-        <Box>
+        <div>
             {logs.map((log) => (
-                <Box
-                    key={log.date}
-                    sx={{
-                        py: 2,
-                        borderBottom: 1,
-                        borderColor: "divider",
-                        "&:last-of-type": { borderBottom: 0, pb: 0 },
-                        "&:first-of-type": { pt: 0 },
-                    }}
-                >
-                    <Typography variant="subtitle1" fontWeight={600}>
-                        {formatDate(log.date)}
-                    </Typography>
-                    <Stack direction="row" sx={{ mt: 1, flexWrap: "wrap", gap: 1 }}>
+                <article key={log.date} className="flex gap-4 border-b border-[var(--line)] py-5 first:pt-0 last:border-0 last:pb-0">
+                    <div className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-lime-300 shadow-[0_0_12px_rgba(190,242,100,0.45)]" />
+                    <div className="min-w-0 flex-1">
+                    <h3 className="text-sm font-semibold text-[var(--text-primary)]">{formatDate(log.date)}</h3>
+                    <div className="mt-3 flex flex-wrap gap-2">
                         {log.activities.map((activity, index) => {
                             const description = describeActivity(activity);
                             return (
-                                <Chip
-                                    key={`${activity.type}-${index}`}
-                                    size="small"
-                                    variant="outlined"
-                                    label={
-                                        description
-                                            ? `${humanize(activity.type)} — ${description}`
-                                            : humanize(activity.type)
-                                    }
-                                />
+                                <span key={`${activity.type}-${index}`} className="rounded-lg border border-[var(--line)] bg-[var(--surface-raised)] px-3 py-1.5 text-xs text-[var(--text-secondary)]">
+                                    <span className="font-medium text-[var(--text-primary)]">{humanize(activity.type)}</span>
+                                    {description && <span className="text-[var(--text-muted)]"> <span aria-hidden="true">·</span> {description}</span>}
+                                </span>
                             );
                         })}
-                    </Stack>
-                </Box>
+                    </div>
+                    </div>
+                </article>
             ))}
-        </Box>
+        </div>
     );
 };
 

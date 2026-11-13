@@ -1,5 +1,3 @@
-import { PaletteMode } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import ColorModeContext from './context/ColorModeContext';
@@ -8,26 +6,25 @@ import Homepage from './pages/Homepage';
 import PageLayout from './pages/PageLayout';
 
 function App() {
-    const [mode, setMode] = React.useState<PaletteMode>('dark');
+    const [mode, setMode] = React.useState<'light' | 'dark'>(() =>
+        window.localStorage.getItem('exercise-tracker-mode') === 'light' ? 'light' : 'dark'
+    );
     const colorMode = React.useMemo(
         () => ({
-        // The dark mode switch would invoke this method
-        toggleColorMode: () => {
-            setMode((prevMode: PaletteMode) => prevMode === 'light' ? 'dark' : 'light');
+            toggleColorMode: () => {
+                setMode((current) => {
+                    const next = current === 'light' ? 'dark' : 'light';
+                    window.localStorage.setItem('exercise-tracker-mode', next);
+                    return next;
+                });
             },
         }),
         [],
     );
 
-    const theme = React.useMemo(() => createTheme({
-        palette: {
-            mode
-        }
-    }), [mode]);
-
     return (
-        <ColorModeContext.Provider value={colorMode}>
-            <ThemeProvider theme={theme}>
+        <div className={mode}>
+            <ColorModeContext.Provider value={colorMode}>
                 <Routes>
                     <Route path="/" element={<PageLayout />}>
                         <Route index element={<Navigate to="home" replace />} />
@@ -35,8 +32,8 @@ function App() {
                         <Route path="data" element={<Datapage />} />
                     </Route>
                 </Routes>
-            </ThemeProvider>
-        </ColorModeContext.Provider>
+            </ColorModeContext.Provider>
+        </div>
     );
 }
 
