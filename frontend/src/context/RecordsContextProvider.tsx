@@ -1,4 +1,4 @@
-import yaml from "js-yaml";
+import { JSON_SCHEMA, load } from "js-yaml";
 import React, { ReactNode, useEffect, useState } from "react";
 import { Records } from "../types/records";
 
@@ -36,7 +36,7 @@ export const RecordsProvider = ({ children }: Props) => {
                 const contents = await response.text();
                 // JSON_SCHEMA keeps dates as strings instead of parsing them
                 // into Date objects, which keeps grouping and formatting simple.
-                const parsed = yaml.load(contents, { schema: yaml.JSON_SCHEMA }) as Records;
+                const parsed = load(contents, { schema: JSON_SCHEMA }) as Records;
 
                 if (!parsed) {
                     throw new Error("records.yaml is empty");
