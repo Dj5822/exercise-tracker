@@ -17,6 +17,7 @@ Runs the test suite once with Vitest.
 
 Checks TypeScript types and builds the production app into the `dist` folder.
 
-`npm start` and `npm run build` copy the repository's root `records.yaml` into
-`public/records.yaml` before serving or building. Restart the dev server after
+`npm start` and `npm run build` generate `public/records.yaml` from the repository's
+root `records.yaml` before serving or building. The sync script derives all-time
+totals and single-activity records from the daily log. Restart the dev server after
 changing the source YAML file.

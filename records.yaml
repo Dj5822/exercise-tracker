@@ -1,20 +1,3 @@
-total_records:
-  pull_ups: 92
-  muscle_ups: 2
-  push_ups: 325
-  handstand_push_ups: 33
-  one_arm_push_ups: 20
-  leg_raises: 15
-  bouldering: V4
-
-single_records:
-  pull_ups: 20
-  muscle_ups: 2
-  push_ups: 50
-  handstand_push_ups: 10
-  one_arm_push_ups: 4
-  leg_raises: 15
-
 daily_logs:
   - date: 2026-08-23
     activities:
@@ -395,7 +378,7 @@ daily_logs:
         total: 30
       - type: push_ups
         count: 20
-      - type: l_sit_raises
+      - type: leg_raises
         count: 10
   - date: 2025-12-24
     activities:
@@ -599,10 +582,10 @@ daily_logs:
         count: 12
   - date: 2024-12-25
     activities:
-      - type: left_arm_push_ups
+      - type: left_hand_push_ups
         breakdown: 3 + 5
         total: 8
-      - type: right_arm_push_ups
+      - type: right_hand_push_ups
         breakdown: 3 + 5
         total: 8
       - type: pull_ups
@@ -1749,7 +1732,7 @@ daily_logs:
     activities:
       - type: push_ups
         breakdown: 40 * 3
-      - type: handstand_wall_push_ups
+      - type: handstand_push_ups
         count: 10
   - date: 2019-06-26
     activities:

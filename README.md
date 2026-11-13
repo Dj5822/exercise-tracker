@@ -3,7 +3,8 @@
 ## Introduction
 Track your exercise records in `records.yaml` and view them in the web frontend.
 The frontend is read-only: it displays your all-time totals, personal bests, charts,
-and the full daily log. To add or change a record, edit `records.yaml`.
+and the full daily log. To add or change a record, edit `records.yaml`; all-time
+totals and single-activity records are generated from its daily log.
 
 Once you have enough data, track your progress (or your decline) on the 'Data' page.
 
@@ -18,8 +19,9 @@ From the root directory, go to the frontend folder and run:
 `npm install`
 `npm start`
 
-`npm start` (and `npm run build`) automatically copies `records.yaml` from the repository
-root into `frontend/public/` so the browser can load it. Restart the dev server after
-editing `records.yaml` so the updated file is copied. Note that you need to have NPM
-installed to do this.
+`npm start` (and `npm run build`) runs the sync script, which generates
+`frontend/public/records.yaml` from the repository's `records.yaml`. It calculates
+all-time totals and single-activity records from the daily log. Restart the dev
+server after editing `records.yaml` to regenerate the frontend data. Note that you
+need to have NPM installed to do this.
 
