@@ -28,7 +28,7 @@ export const RecordsProvider = ({ children }: Props) => {
 
         async function fetchRecords() {
             try {
-                const response = await fetch(`${process.env.PUBLIC_URL}/records.yaml`);
+                const response = await fetch(`${import.meta.env.BASE_URL}records.yaml`);
                 if (!response.ok) {
                     throw new Error(`Failed to load records.yaml (${response.status})`);
                 }
