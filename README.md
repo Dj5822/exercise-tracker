@@ -21,7 +21,10 @@ From the root directory, go to the frontend folder and run:
 
 `npm start` (and `npm run build`) runs the sync script, which generates
 `frontend/public/records.yaml` from the repository's `records.yaml`. It calculates
-all-time totals and single-activity records from the daily log. Restart the dev
-server after editing `records.yaml` to regenerate the frontend data. Note that you
-need to have NPM installed to do this.
+all-time totals, best-in-one-day records and personal bests from the daily log.
+Push-up and pull-up personal bests use the largest set in `breakdown`; entries with
+only a session `count` or `total` are not treated as single-set records. Bouldering
+uses the highest grade.
+Restart the dev server after editing `records.yaml` to regenerate the frontend
+data. Note that you need to have NPM installed to do this.
 

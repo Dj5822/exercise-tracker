@@ -1782,6 +1782,7 @@ daily_logs:
   - date: 2015-02-03
     activities:
       - type: push_ups
+        breakdown: 100 * 1
         count: 100
   - date: 2015-01-22
     activities:

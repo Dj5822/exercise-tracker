@@ -25,7 +25,7 @@ const Homepage = () => {
         <div className="space-y-12">
             <section className="home-hero relative overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(ellipse_at_82%_30%,rgba(190,242,100,.12),transparent_38%),linear-gradient(120deg,var(--surface),var(--app-bg))] px-6 py-8 sm:px-10 sm:py-10">
                 <div className="relative z-[1] max-w-2xl">
-                    <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-lime-300/20 bg-lime-300/[.07] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.18em] text-lime-300"><span className="h-1.5 w-1.5 rounded-full bg-lime-300"/>Overview</p>
+                    <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-lime-300/20 bg-lime-300/[.07] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[.18em] text-lime-300"><span className="h-1.5 w-1.5 rounded-full bg-lime-300" />Overview</p>
                     <h1 className="text-4xl font-semibold leading-[1.1] tracking-[-.04em] sm:text-5xl">Exercise records</h1>
                     <p className="mt-4 max-w-lg text-sm leading-6 text-[var(--text-secondary)] sm:text-base">A summary of recorded training activity.</p>
                     <Link to="/data" className="mt-7 inline-flex items-center gap-2 rounded-xl bg-lime-300 px-4 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-lime-200">View data <span aria-hidden="true">↗</span></Link>
@@ -36,13 +36,6 @@ const Homepage = () => {
             </section>
 
             <section>
-                <SectionHeading eyebrow="Totals" title="All-time totals" detail={`${activityCount} recorded activities`} />
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4 xl:gap-4">
-                    {Object.entries(records.total_records).map(([name, value], index) => <StatCard key={name} label={humanize(name)} value={value} accent={index % 3 === 1 ? "bg-sky-300" : index % 3 === 2 ? "bg-orange-300" : "bg-lime-300"} />)}
-                </div>
-            </section>
-
-            <section>
                 <SectionHeading eyebrow="Records" title="Personal bests" detail="Best single efforts" />
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4 xl:gap-4">
                     {Object.entries(records.single_records).map(([name, value], index) => <StatCard key={name} label={humanize(name)} value={value} accent={index % 3 === 1 ? "bg-violet-300" : index % 3 === 2 ? "bg-orange-300" : "bg-lime-300"} />)}
@@ -50,9 +43,25 @@ const Homepage = () => {
             </section>
 
             <section>
+                <SectionHeading eyebrow="Daily records" title="Best in one day" detail="Highest total recorded on a single date" />
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:gap-4">
+                    {Object.entries(records.daily_records).map(([name, value], index) => <StatCard key={name} label={name === "bouldering" ? "Bouldering problems" : humanize(name)} value={value} accent={index % 3 === 1 ? "bg-sky-300" : index % 3 === 2 ? "bg-orange-300" : "bg-lime-300"} />)}
+                </div>
+            </section>
+
+            <section>
                 <SectionHeading eyebrow="Activity log" title="Recent entries" detail={latestDate ? `Latest entry · ${latestDate}` : "Most recent entries"} />
                 <div className="rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-5 sm:p-7"><DailyLogList logs={records.daily_logs.slice(0, 5)} /></div>
             </section>
+
+            <section>
+                <SectionHeading eyebrow="Totals" title="All-time totals" detail={`${activityCount} recorded activities`} />
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4 xl:gap-4">
+                    {Object.entries(records.total_records).map(([name, value], index) => <StatCard key={name} label={humanize(name)} value={value} accent={index % 3 === 1 ? "bg-sky-300" : index % 3 === 2 ? "bg-orange-300" : "bg-lime-300"} />)}
+                </div>
+            </section>
+
+
         </div>
     );
 };

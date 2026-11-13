@@ -17,6 +17,7 @@ export interface DailyLog {
 
 export interface Records {
     total_records: Record<string, number | string>;
+    daily_records: Record<string, number | string>;
     single_records: Record<string, number | string>;
     daily_logs: DailyLog[];
 }

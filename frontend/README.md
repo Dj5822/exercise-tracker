@@ -19,5 +19,6 @@ Checks TypeScript types and builds the production app into the `dist` folder.
 
 `npm start` and `npm run build` generate `public/records.yaml` from the repository's
 root `records.yaml` before serving or building. The sync script derives all-time
-totals and single-activity records from the daily log. Restart the dev server after
-changing the source YAML file.
+totals, best-in-one-day records and personal bests from the daily log. Push-up and
+pull-up personal bests use the largest set in `breakdown`; bouldering uses the
+highest grade. Restart the dev server after changing the source YAML file.

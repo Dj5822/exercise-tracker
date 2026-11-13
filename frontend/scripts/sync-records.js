@@ -25,6 +25,9 @@ if (!sourceRecords || !Array.isArray(sourceRecords.daily_logs)) {
 const totals = new Map();
 const bests = new Map();
 const highestGrades = new Map();
+const bestDays = new Map();
+const totalsByDate = new Map();
+const personalBestTypes = new Set(["push_ups", "pull_ups", "bouldering"]);
 
 function quantity(activity) {
     if (typeof activity.total === "number") return activity.total;
@@ -42,7 +45,9 @@ function bestSet(activity) {
         if (setCounts.length > 0) return Math.max(...setCounts);
     }
 
-    return quantity(activity);
+    // A count or total can describe a whole session, so it is not enough to
+    // identify the best single set without a set-by-set breakdown.
+    return null;
 }
 
 function gradeScore(grade) {
@@ -53,18 +58,27 @@ function gradeScore(grade) {
 }
 
 for (const log of sourceRecords.daily_logs) {
+    const dayTotals = totalsByDate.get(log.date) ?? new Map();
+    totalsByDate.set(log.date, dayTotals);
+
     for (const activity of log.activities ?? []) {
         const value = quantity(activity);
         if (value !== null) {
             totals.set(activity.type, (totals.get(activity.type) ?? 0) + value);
 
+            if (personalBestTypes.has(activity.type)) {
+                dayTotals.set(activity.type, (dayTotals.get(activity.type) ?? 0) + value);
+            }
+        }
+
+        if (personalBestTypes.has(activity.type)) {
             const best = bestSet(activity);
             if (best !== null) {
                 bests.set(activity.type, Math.max(bests.get(activity.type) ?? -Infinity, best));
             }
         }
 
-        if (typeof activity.grade === "string") {
+        if (personalBestTypes.has(activity.type) && typeof activity.grade === "string") {
             const previous = highestGrades.get(activity.type);
             const currentScore = gradeScore(activity.grade);
             const previousScore = previous ? gradeScore(previous) : null;
@@ -75,9 +89,16 @@ for (const log of sourceRecords.daily_logs) {
     }
 }
 
+for (const dayTotals of totalsByDate.values()) {
+    for (const [type, value] of dayTotals) {
+        bestDays.set(type, Math.max(bestDays.get(type) ?? -Infinity, value));
+    }
+}
+
 const sortEntries = (map) => Object.fromEntries([...map.entries()].sort(([a], [b]) => a.localeCompare(b)));
 const records = {
     total_records: sortEntries(totals),
+    daily_records: sortEntries(bestDays),
     single_records: {
         ...sortEntries(bests),
         ...sortEntries(highestGrades),
