@@ -1,22 +1,25 @@
 import { useContext, useMemo, useState } from "react";
-import { Area, AreaChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import DailyLogList from "../components/DailyLogList";
 import { RecordsContext } from "../context/RecordsContextProvider";
 import { DailyLog } from "../types/records";
 import { activityQuantity, humanize } from "../utils/records";
 
 type DateGroup = "daily" | "monthly" | "yearly";
-const CHART_EXERCISES = ["push_ups", "pull_ups"];
 const groupLabel: Record<DateGroup, string> = { daily: "day", monthly: "month", yearly: "year" };
 const groupKey = (date: string, group: DateGroup): string => group === "monthly" ? date.slice(0, 7) : group === "yearly" ? date.slice(0, 4) : date;
+const seriesColor = (index: number): string => `hsl(${Math.round((index * 137.508 + 78) % 360)} 68% 58%)`;
 
-const buildChartData = (logs: DailyLog[], group: DateGroup) => {
+const buildChartData = (logs: DailyLog[], group: DateGroup, exerciseTypes: string[]) => {
     const points = new Map<string, Record<string, string | number>>();
     logs.forEach((log) => {
         const key = groupKey(log.date, group);
-        const point = points.get(key) ?? { date: key, ...Object.fromEntries(CHART_EXERCISES.map((exercise) => [exercise, 0])) };
+        const point = points.get(key) ?? { date: key, ...Object.fromEntries(exerciseTypes.map((exercise) => [exercise, 0])) };
         log.activities.forEach((activity) => {
-            if (CHART_EXERCISES.includes(activity.type)) point[activity.type] = (point[activity.type] as number) + activityQuantity(activity);
+            if (!exerciseTypes.includes(activity.type)) return;
+            const loggedQuantity = activityQuantity(activity);
+            const value = loggedQuantity > 0 ? loggedQuantity : 1;
+            point[activity.type] = (point[activity.type] as number) + value;
         });
         points.set(key, point);
     });
@@ -26,7 +29,23 @@ const buildChartData = (logs: DailyLog[], group: DateGroup) => {
 const Datapage = () => {
     const { records, isLoading, error } = useContext(RecordsContext);
     const [dateGroup, setDateGroup] = useState<DateGroup>("monthly");
-    const chartData = useMemo(() => buildChartData(records?.daily_logs ?? [], dateGroup), [records, dateGroup]);
+    const [selectedExercises, setSelectedExercises] = useState<string[]>(["push_ups", "pull_ups"]);
+    const exerciseTypes = useMemo(
+        () => [...new Set((records?.daily_logs ?? []).flatMap((log) => log.activities.map((activity) => activity.type)))].sort(),
+        [records]
+    );
+    const visibleExercises = exerciseTypes.filter((exercise) => selectedExercises.includes(exercise));
+    const chartData = useMemo(
+        () => buildChartData(records?.daily_logs ?? [], dateGroup, visibleExercises),
+        [records, dateGroup, visibleExercises]
+    );
+
+    const toggleExercise = (exercise: string) => {
+        setSelectedExercises((selected) => selected.includes(exercise)
+            ? selected.filter((item) => item !== exercise)
+            : [...selected, exercise]
+        );
+    };
 
     if (isLoading) return <div className="grid min-h-[50vh] place-items-center"><div className="h-9 w-9 animate-spin rounded-full border-2 border-white/10 border-t-lime-300" /></div>;
     if (error || !records) return <div role="alert" className="rounded-2xl border border-rose-400/20 bg-rose-400/10 p-5 text-sm text-rose-200">{error ?? "Could not load records.yaml"}</div>;
@@ -43,20 +62,34 @@ const Datapage = () => {
             <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_300px]">
                 <section className="min-w-0 rounded-2xl border border-[var(--line)] bg-[var(--surface)] p-4 sm:p-6">
                     <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-                        <div><h2 className="font-semibold">Reps logged</h2><p className="mt-1 text-xs text-[var(--text-muted)]">Push-ups and pull-ups by {groupLabel[dateGroup]}</p></div>
-                        <div className="flex gap-4 text-xs text-[var(--text-secondary)]"><span className="flex items-center gap-2"><i className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--chart-push)" }}/>Push-ups</span><span className="flex items-center gap-2"><i className="h-2 w-2 rounded-full" style={{ backgroundColor: "var(--chart-pull)" }}/>Pull-ups</span></div>
+                        <div><h2 className="font-semibold">Activity by exercise</h2><p className="mt-1 text-xs text-[var(--text-muted)]">Recorded quantity by {groupLabel[dateGroup]} · unquantified entries count as one</p></div>
+                    </div>
+                    <div className="mb-4 rounded-xl border border-[var(--line)] bg-[var(--app-bg)]/40 p-3">
+                        <div className="mb-2 flex items-center justify-between gap-3">
+                            <span className="text-[10px] font-bold uppercase tracking-[.15em] text-[var(--text-muted)]">Filter exercises</span>
+                            <div className="flex gap-3 text-[11px] font-semibold">
+                                <button type="button" onClick={() => setSelectedExercises(exerciseTypes)} className="text-lime-300 hover:underline">All</button>
+                                <button type="button" onClick={() => setSelectedExercises([])} className="text-[var(--text-muted)] hover:text-[var(--text-primary)]">Clear</button>
+                            </div>
+                        </div>
+                        <div className="flex max-h-24 flex-wrap gap-1.5 overflow-y-auto" role="group" aria-label="Filter chart by exercise">
+                            {exerciseTypes.map((exercise, index) => {
+                                const isSelected = selectedExercises.includes(exercise);
+                                return <button key={exercise} type="button" aria-pressed={isSelected} onClick={() => toggleExercise(exercise)} className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] font-medium transition ${isSelected ? "border-lime-300/30 bg-[var(--accent-soft)] text-[var(--text-primary)]" : "border-[var(--line)] text-[var(--text-muted)] hover:text-[var(--text-secondary)]"}`}><i className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: seriesColor(index), opacity: isSelected ? 1 : .35 }}/>{humanize(exercise)}</button>;
+                            })}
+                        </div>
                     </div>
                     <div className="h-[320px] w-full sm:h-[390px]">
-                        {chartData.length === 0 ? <div className="grid h-full place-items-center text-sm text-[var(--text-muted)]">No chart data available yet.</div> : <ResponsiveContainer width="100%" height="100%">
+                        {visibleExercises.length === 0 ? <div className="grid h-full place-items-center text-sm text-[var(--text-muted)]">Select at least one exercise to view the chart.</div> : chartData.length === 0 || exerciseTypes.length === 0 ? <div className="grid h-full place-items-center text-sm text-[var(--text-muted)]">No chart data available yet.</div> : <ResponsiveContainer width="100%" height="100%">
                             <AreaChart data={chartData} margin={{ top: 10, right: 8, left: -18, bottom: 0 }}>
-                                <defs><linearGradient id="pushFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="var(--chart-push)" stopOpacity={0.25}/><stop offset="95%" stopColor="var(--chart-push)" stopOpacity={0}/></linearGradient><linearGradient id="pullFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="var(--chart-pull)" stopOpacity={0.2}/><stop offset="95%" stopColor="var(--chart-pull)" stopOpacity={0}/></linearGradient></defs>
                                 <CartesianGrid stroke="var(--chart-grid)" strokeDasharray="3 6" vertical={false}/>
                                 <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{ fill: "var(--chart-label)", fontSize: 11 }} dy={10}/>
                                 <YAxis allowDecimals={false} axisLine={false} tickLine={false} tick={{ fill: "var(--chart-label)", fontSize: 11 }}/>
                                 <Tooltip contentStyle={{ background: "var(--tooltip-bg)", border: "1px solid var(--line)", borderRadius: 12, color: "var(--text-primary)", fontSize: 12 }} labelStyle={{ color: "var(--text-secondary)", marginBottom: 6 }}/>
-                                <Legend content={() => null}/>
-                                <Area connectNulls type="monotone" dataKey="push_ups" name={humanize("push_ups")} stroke="var(--chart-push)" strokeWidth={2.5} fill="url(#pushFill)" activeDot={{ r: 5, strokeWidth: 0 }}/>
-                                <Area connectNulls type="monotone" dataKey="pull_ups" name={humanize("pull_ups")} stroke="var(--chart-pull)" strokeWidth={2.5} fill="url(#pullFill)" activeDot={{ r: 5, strokeWidth: 0 }}/>
+                                {visibleExercises.map((exercise) => {
+                                    const colorIndex = exerciseTypes.indexOf(exercise);
+                                    return <Area key={exercise} connectNulls type="monotone" dataKey={exercise} name={humanize(exercise)} stroke={seriesColor(colorIndex)} strokeWidth={1.8} fill={seriesColor(colorIndex)} fillOpacity={0.045} activeDot={{ r: 4, strokeWidth: 0}}/>;
+                                })}
                             </AreaChart>
                         </ResponsiveContainer>}
                     </div>
